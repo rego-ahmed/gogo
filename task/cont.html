@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+            var sub = document.getElementById("subject").value , body = document.getElementById("body").value ;
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username : "elrabeana@gmail.com",
+				Password : "aab01113284597",
+				To : 'ahmedabubakr148@gmail.com',
+				From : "elrabeana@gmail.com",
+				Subject : sub,
+				Body : body,
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
+</head>
+<body>  
+	<!-- <form method="post">
+        <input type="text" name="subject" id="subject">
+        <input type="text" name="body" id="body">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+    </form>   -->
+    <iframe id="selpag" dir="rtl" scrolling="no" src="https://backcare.com.sa/product/sl1605/" style="height: 150rem;width:100%;"></iframe>
+        
+    <!-- <div style="width: 200px; background-color: blue;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div> -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+</body>
+</html>
